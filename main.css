@@ -1,0 +1,135 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #CCCCCC;
+  background-image: linear-gradient(to top, #312836, #2a2836);
+}
+
+#header {
+  background-image: linear-gradient(to top, #2a2836, #161616, #161616);
+  height: 300px;
+  width: 100%;
+  padding-left: 10%;
+}
+
+#header img {
+  margin-top: 50px;
+  height: 200px;
+  width: 200px;
+  float: left;
+  border-radius: 50%;
+}
+
+#header div {
+  line-height: 1.25;
+  padding-top: 125px;
+  width: 60%;
+  margin-left: 250px;
+}
+
+#footer {
+  background-image: linear-gradient(to top, #161616, #161616, #312836);
+  height: 300px;
+  text-align: center;
+}
+
+#footer a{
+
+}
+
+#foreground {
+  background-color: #161616;
+  margin: 0 10%;
+  padding: 0;
+}
+
+/*.tile {
+  position: relative;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  animation-name: slideIn;
+  animation-fill-mode: forwards;
+  animation-duration: 0.75s;
+}*/
+
+.gridtile {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1em;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 0;
+  padding: 1em;
+  animation-name: slideIn;
+  animation-fill-mode: forwards;
+  animation-duration: 0.75s;
+}
+
+.gridtile img {
+  width: 100%;
+}
+
+.gridtile li {
+  margin-top: 0.5em;
+}
+
+.aboutcontainer {
+  display: grid;
+  position: relative;
+  background-color: #1e1e1e;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1em;
+  align-items: baseline;
+  top: 1em;
+  margin: 1em;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 0.75s;
+}
+
+.button {
+  background-color: #283236;
+  color: #CCCCCC;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 1em;
+  margin: 1em;
+}
+
+.button:hover {
+  background-color: #222222;
+  transition-duration: 0.25s;
+}
+
+.button:visited {
+  background-color: #312836;
+}
+
+/* Various timers for staggering sliding animation */
+.delay1 {
+  animation-delay: 0.2s;
+}
+
+.delay2 {
+  animation-delay: 0.4s;
+}
+
+.delay3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes slideIn {
+  0%{opacity: 0%; transform: translateX(-200px)}
+  100%{opacity: 100%; transform: translateX(0px)}
+}
+
+@keyframes fadeIn {
+  0%{opacity: 0%;}
+  100%{opacity: 100%;}
+}
