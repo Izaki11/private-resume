@@ -96,6 +96,33 @@ body{
   animation-duration: 0.75s;
 }
 
+.webtile {
+  background-color: #1e1e1e;
+  padding: 1em;
+  margin: 1em;
+  text-align: center;
+}
+
+.webtile img {
+  width: 80%;
+  margin: 2em 0 2em 0;
+}
+
+.webtile p {
+  margin: 3em;
+}
+
+.webtile .button {
+  display: inline-block;
+}
+
+.spacer {
+  background-color: #1e1e1e;
+  padding: 0.5em;
+  margin: 2em 1em 2em 1em;
+  text-align: center;
+}
+
 .button {
   background-color: #283236;
   color: #CCCCCC;
